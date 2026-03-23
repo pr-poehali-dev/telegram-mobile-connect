@@ -1,0 +1,13 @@
+{
+  "tests": [
+    {
+      "name": "Send OTP",
+      "method": "POST",
+      "path": "/send-otp",
+      "body": {"phone": "+79001234567"},
+      "expectedStatus": 200,
+      "expectedBody": {"message": "Код отправлен"},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
